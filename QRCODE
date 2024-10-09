@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | QR code component</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>   
+   
+</head>
+<body>
+  <div class="qr-code-container">
+    <div class="qr-code">
+      <img src="https://animaeducacao-my.sharepoint.com/:i:/r/personal/fabiana_yamana_animaeducacao_com_br/Documents/image-qr-code.png?csf=1&web=1&e=vQWG5T" alt="QR code image" class="qr-code-image">
+    </div>
+    <p class="text">Improve your front-end skills by building projects. Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>   
+   
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Fabiana Yamana</a>.
+  </div>
+
+  <script>
+    // Assuming the URL for the QR code is "https://www.frontendmentor.io/" (replace with your desired URL)
+    const qrcode = new QRCode(document.querySelector(".qr-code"), {
+      text: "https://www.frontendmentor.io/",
+      width: 150,
+      height: 150,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+</html>
