@@ -1,0 +1,29 @@
+.qr-code-container {
+  background-color: #F0F8FF; /* Azul claro semelhante ao design */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative; /* Establish a reference point for absolute positioning */
+}
+
+.qr-code-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust the width and height as needed */
+  height: 100%;
+}
+
+.text {
+  font-size: 14px;
+  color: #333;
+}
